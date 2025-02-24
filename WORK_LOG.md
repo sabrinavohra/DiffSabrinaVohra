@@ -1,9 +1,9 @@
-Name: YOUR NAME HERE
+Name: Sabrina Vohra
 
-| Date    |  Time  |                                     Update |
-|:--------|:------:|-------------------------------------------:|
-| April 5 | 9-10pm | I tried to write abstract, efficient code. |
-|         |        |                                            |
+| Date |    Time     |                                                         Update |
+|:-----|:-----------:|---------------------------------------------------------------:|
+| 2/24 | 2:30-3:00pm |  I brainstormed in class to look for the optimal substructure. |
+|      |             |                                                                |
 
 
 To add a new row to the table, click into a cell and then hit shift-enter.
