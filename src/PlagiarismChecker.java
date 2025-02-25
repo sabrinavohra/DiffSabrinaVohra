@@ -17,6 +17,15 @@ public class PlagiarismChecker {
     public static int longestSharedSubstring(String doc1, String doc2) {
 
         // TODO Complete this function to return the length of the longest shared substring.
+
+        // Optimal substructure:
+            // Look through each letter in one of the texts and see if there's a matching one in the other
+            // From those indices, look to the next index and see if there's a match
+            // For each letter/substring:
+                // Check and save the indices where there is a match in the other text
+
+
+
         int longest = 0;
         int current = 0;
         for(int i = 0; i < doc1.length(); i++) {
