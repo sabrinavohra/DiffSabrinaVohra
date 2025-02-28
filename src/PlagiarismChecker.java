@@ -18,17 +18,17 @@ public class PlagiarismChecker {
     public static int longestSharedSubstring(String doc1, String doc2) {
         // TODO Complete this function to return the length of the longest shared substring.
         int[][] save = new int[doc1.length() + 1][doc2.length() + 1];
-        int x;
+        int current;
         for (int i = 1; i < save.length; i++) {
             for (int j = 1; j < save[0].length; j++) {
                 if (doc1.charAt(i - 1) == doc2.charAt(j - 1)) {
-                    x = save[i-1][j] + 1;
-                    if (x <= i || x <= j) {
-                        save[i][j] = x;
+                    current = save[i - 1][j - 1] + 1;
+                    if (current <= i && current <= j) {
+                        save[i][j] = current;
                     }
                 }
                 else {
-                    save[i][j] = Math.max(save[i - 1][j], save[i][j - 1]);
+                    save[i][j] = Math.max((save[i - 1][j]), (save[i][j - 1]));
                 }
             }
         }
